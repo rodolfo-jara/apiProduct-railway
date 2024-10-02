@@ -8,8 +8,8 @@ services:
     environment:
       POSTGRES_USER: ${SPRING_DATASOURCE_USERNAME}
       POSTGRES_PASSWORD: ${SPRING_DATASOURCE_PASSWORD}
-      POSTGRES_DB: ${SPRING_DATASOURCE_BD}
+      POSTGRES_DB: ${SPRING_DATASOURCE_DB}
     ports:
       - "5432:5432"
     volumes:
-      - ./postgres:/var/lib/postgresql/data
+      - ./postgres:/var/lib/postgesql/data  
